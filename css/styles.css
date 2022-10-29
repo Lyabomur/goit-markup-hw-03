@@ -28,11 +28,32 @@ body{
 /* колір bgc кнопки в герою #2196F3 */
 /* ховер акцент кнопки в герою #188CE8; */
 
-.header{
+.container{
+    margin:0 auto;
+    padding: 0 15px; 
+    width: 1200px;
+    outline: 2px solid tomato;
+
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* хедер портфоліо */
+.header .container{
+    display: flex;
     background-color: var(--bgc-white);
 }
 
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
 .logo{
+    margin-right: 93px;
     font-family:'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -50,6 +71,7 @@ body{
     list-style: none;
     text-decoration: none;
     color:var(--main-color);
+    /* margin-left: 93px; */
 }
 
 /* Навігація по сайту */
@@ -63,12 +85,48 @@ body{
     letter-spacing: 0.02em;
     }   
 
+/* Навігація  */
+
+.site-nav{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}    
+
+.site-nav .item{
+    margin-right: 50px;
+    } 
+
+.site-nav .item:last-child{
+    margin-right: 0px;
+}
+
+.site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active
     {
     color:var(--acent-color);
     }
+
+/* Контакти хедера */
+
+.contact-nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 0;
+    
+}
+
+.contact-nav .item + .item{
+    margin-left: 50px;
+}
 
 .contact-nav .link{
     font-weight: 500;
@@ -87,13 +145,15 @@ body{
 
 .hero{
     background:var(--bgc-footer);
+    text-align: center;
 }
 
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--bgc-white)
@@ -105,6 +165,8 @@ body{
 }
 
 .hero-button{
+    align-items: center;
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -112,6 +174,10 @@ body{
     color: var(--bgc-white);
     background-color: var(--bgc-button); 
     cursor: pointer;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-decoration: none;
 
 }
 
