@@ -71,7 +71,8 @@ body{
     list-style: none;
     text-decoration: none;
     color:var(--main-color);
-    /* margin-left: 93px; */
+    margin: 0;
+    padding: 0;
 }
 
 /* Навігація по сайту */
@@ -183,7 +184,22 @@ body{
 
 /* секція перваги*/
 
+.benefits .list{
+    display: flex;
+    flex-wrap: row;
+   
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+
 .benefits-title{
+ 
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -197,7 +213,13 @@ body{
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+
+
+
 
 /* секція роботи */
 
