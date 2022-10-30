@@ -192,9 +192,7 @@ body{
 
 .benefits-item:not(:last-child) {
     margin-right: 30px;
-
 }
-
 
 .benefits-title{
  
@@ -216,9 +214,6 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-
-
 
 
 /* секція роботи */
