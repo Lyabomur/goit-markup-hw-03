@@ -37,6 +37,7 @@ body{
 }
 
 .section{
+    width: auto;
     padding-top: 94px;
     padding-bottom: 94px;
     
@@ -143,16 +144,23 @@ body{
     color:var(--acent-color);
     }
 
+
+
 /* унікальний контент */
+
+
 
 .hero{
     background:var(--bgc-footer);
+    
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin:0 auto 40px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -185,10 +193,13 @@ body{
 
 /* секція перваги*/
 
+.benefits{
+    padding-bottom: 0;
+}
 .benefits .list{
     display: flex;
     flex-wrap: row;
-   
+    
 }
 
 .benefits-item:not(:last-child) {
@@ -199,6 +210,7 @@ body{
  
     margin-top: 0;
     margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -219,10 +231,14 @@ body{
 
 /* секція роботи */
 
+.work{
+    padding-bottom: 0;
+}
 
 .work-title{ 
     margin-top: 0;
     margin-bottom: 50px;
+    padding-top: 94px;
 
     font-weight: 700;
     font-size: 36px;
@@ -273,11 +289,13 @@ body{
 /* команда */
 .team{
     background-color: var(--fon-button);
+    padding-top: 94px;
 }
 .team-title{
     margin-top: 0;
     margin-bottom: 50px;
-
+    padding-top: 94px;
+    
     font-family:inherit;
     font-weight: 700;
     font-size: 36px;
@@ -287,8 +305,9 @@ body{
     color: var(--main-color)
 }
 
-.team > .list{
+.team .list{
     display: flex;
+    padding-bottom: 94px;
     
 }
 
@@ -303,18 +322,18 @@ body{
 }
 
 .img-data{
-    padding: 30px 70px;
+   padding: 30px;
 }
 
 .team-name{
     margin: 0;
     margin-bottom: 10px;
-    
+    /* justify-content: start; */
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--main-color)
 }
