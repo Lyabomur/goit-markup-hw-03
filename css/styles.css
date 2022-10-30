@@ -32,7 +32,7 @@ body{
     margin:0 auto;
     padding: 0 15px; 
     width: 1200px;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 
 }
 
@@ -40,11 +40,10 @@ body{
     width: auto;
     padding-top: 94px;
     padding-bottom: 94px;
-    
-    
+   
 }
 
-/* хедер портфоліо */
+/* хедер */
 
 .header{
     border-bottom
@@ -295,6 +294,7 @@ body{
 }
 
 /* команда */
+
 .team{
     background-color: var(--fon-button);
 }
@@ -355,16 +355,31 @@ body{
     color: var(--second-text-color)
 }
 
+/* ПОРТФОЛІО */
+
 /* кнопки портфоліо */
 
 .filtr-button:hover,
 .filtr-button:focus{
     background-color:var(--acent-color);
     color: var(--fon);
- 
+    
+}
+
+.filtr-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+}
+
+.filtr-list .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filtr-button{
+    padding: 6px 22px;
+
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
@@ -416,7 +431,7 @@ body{
     color:var(--bgc-white);
 }
 
-/* адреса */
+/* футер адреса */
 
 .address{
    font-style: normal;
