@@ -39,6 +39,7 @@ body{
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
 
 /* хедер портфоліо */
@@ -218,7 +219,11 @@ body{
 
 /* секція роботи */
 
-.work-title{
+
+.work-title{ 
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -227,6 +232,28 @@ body{
     color: var(--main-color)
 }
 
+.work .list {
+    display: flex;
+       
+ }
+
+.work-item{
+    margin-right: 30px;
+    width: calc((100% -60px) / 3);
+    
+}
+
+.work-item:nth-child(3n){
+    margin-right: 0;
+}
+
+/* Фотографії */
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* прихований заголовок */
 
@@ -248,6 +275,9 @@ body{
     background-color: var(--fon-button);
 }
 .team-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-family:inherit;
     font-weight: 700;
     font-size: 36px;
@@ -257,8 +287,19 @@ body{
     color: var(--main-color)
 }
 
+.team > .list{
+    display: flex;
+    
+}
+
 .team-img{
     background-color: var(--bgc-white);
+    margin-right: 30px;
+    width: calc((100% -90px) / 4);
+}
+
+.team-img:nth-child(4n) {
+    margin-right: 0;
 }
 
 .team-name{
